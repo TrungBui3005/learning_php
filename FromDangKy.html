@@ -1,57 +1,46 @@
 <html>
-    <heal>
+    <head>
         <title>Web Đăng Ký</title>
-    </heal>
-        <style>
-            
-            input, select, textarea {
-                padding: 8px;
-                border-radius: 5px;
-                margin-top: 5px;
-            }
-            button{
-                padding: 8px;
-                border-radius: 5px;
-                margin-top: 5px;
-            }
-        </style>
+        <link href="css/style.css"rel="stylesheet">
+    </head>
 
     <body>
-        <h2>From Đăng Ký </h2>
+        <h2>Form Đăng Ký </h2>
 
-        <from>
-            <label>Họ và tên</label><br>
-            <input type ="text" name ="fullname"><br><br>
-        <table>
-            <tr>
-                <td>
-                    <label>Địa Chỉ</label><br>
-                            <select name="address">
-                            <option value ="Hà Nội">Hà Nội</option>
-                            <option value ="Nam Định">Nam Định</option>
-                            <option value ="Thái Bình">Thái Bình</option>
-                            <option value ="Quảng Ninh">Quảng Ninh</option>
-                            <option value ="Thái Nguyên">Thái Nguyên</option>
-                            <option value ="Sơn La">Sơn La</option>
-                    </select>
-                </td>
-    
-                <td>
-                    <label>Giới Tính</label><br>
-                        <select name="gerder">
-                            <option value="Nam">Nam</option>
-                            <option value="Nữ">Nữ</option>
-                            <option value="Khác">Khác</option>
-                        </select>
-                </td>
-            </tr>
-        </table>
+        <form>
+            <label>Họ và tên</label>
+            <input type ="text" name ="fullname">
+
+        <div class="row">
+            <div class="col">
+                <label>Địa Chỉ</label>
+                <select name="address">
+                    <option value ="Hà Nội">Hà Nội</option>
+                    <option value ="Nam Định">Nam Định</option>
+                    <option value ="Thái Bình">Thái Bình</option>
+                    <option value ="Quảng Ninh">Quảng Ninh</option>
+                    <option value ="Thái Nguyên">Thái Nguyên</option>
+                    <option value ="Sơn La">Sơn La</option>
+                </select>
+            </div>
+            <div class="col">
+                <label>Giới Tính</label>
+                <select name="gerder">
+                    <option value="Nam">Nam</option>
+                    <option value="Nữ">Nữ</option>
+                    <option value="Khác">Khác</option>
+                </select>
+            </div>
+        </div>
+
+            <label>Email</label><br>
+            <input type="text" name="email"><br>
 
             <label>Ghi Chú</label><br>
             <textarea name="note"></textarea><br><br>
 
             <button type="submit ">Đăng Ký</button>
 
-        </from>
+        </form>
     </body>
 </html>
